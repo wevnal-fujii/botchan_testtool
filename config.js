@@ -11,6 +11,7 @@ const USER_AGENT = {
 
 module.exports = {
     HOST: 'http://localhost:3000/',
+    URL: 'http://localhost:3000/api/{{bot}}/{{api}}',
     DEVICES,
     USER_AGENT,
     CURRENT_URL: 'https://admin.botchan.chat/bot/{{cpid}}/scenario',
