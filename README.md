@@ -14,6 +14,9 @@ vi config.js
 # パラメータ設定
 vi bots/${bot_name}.js
 
+# テスト結果を格納するファイルを初期化
+echo "[]" > results.json
+
 npm test
 ```
 
