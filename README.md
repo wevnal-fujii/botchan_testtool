@@ -8,16 +8,11 @@ npm install
 # テストするbotによって変更すべき設定
 vi settings.js
 
-
-
-
-
-
-
-
-
 # 環境や都合によって変更すべき設定
 vi config.js
+
+# パラメータ設定
+vi bots/${bot_name}.js
 
 npm test
 ```
@@ -113,3 +108,23 @@ params: {
 }
 ```
 
+## config.js
+
+#### HOST
+ベースとなるホスト名を指定します。
+
+#### URL
+URLパターンを指定します。
+
+#### DEVICES
+使用できるデバイスのリストです。
+
+#### USER_AGENT
+デバイスが使用するuser agentです。
+
+#### CURRENT_URL
+current_urlに指定される値のパターンです。
+
+#### USER_ID
+user_idに使用される値です。
+テスト毎にuser_idを発行しますが、overrideParamsにuser_idを使用することで固定することが出来ます。
